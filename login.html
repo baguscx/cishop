@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CiShop</title>
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="p-3 text-bg-dark mb-4">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle text-white"
+                id="dropdown-1"
+                aria-haspopup="true"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Manage</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+                <li><a href="" class="dropdown-item">Category</a></li>
+                <li><a href="" class="dropdown-item">Product</a></li>
+                <li><a href="" class="dropdown-item">Order</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+          <ul class="navbar-nav me-2">
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><i class="fas fa-shopping-cart"></i>Cart(0)</a
+              >
+            </li>
+          </ul>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-warning me-2">Sign-up</button>
+          </div>
+          <span class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              id="dropdown-1"
+              aria-haspopup="true"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >User</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+              <li><a href="" class="dropdown-item">Profile</a></li>
+              <li><a href="" class="dropdown-item">Setting</a></li>
+              <li><a href="" class="dropdown-item">Logout</a></li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- login form -->
+    <!-- main content -->
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="card">
+            <div class="card-header fw-bold">Login</div>
+            <div class="card-body">
+              <form action="" method="post">
+                <div class="form-group mb-3">
+                  <label for="" id="email">Email</label>
+                  <input type="email" class="form-control" required autofocus />
+                  <small class="form-text text-danger">Email harus diisi</small>
+                </div>
+                <div class="form-group mb-3">
+                  <label for="" id="password">Password</label>
+                  <input type="password" class="form-control" required />
+                  <small class="form-text text-danger"
+                    >password harus diisi</small
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main content end -->
+
+    <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
