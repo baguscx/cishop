@@ -7,88 +7,125 @@
     <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
   </head>
-
-  <header class="p-3 text-bg-dark">
-    <div class="container">
-      <div
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+  <body>
+    <!-- navbar -->
+    <header class="p-3 text-bg-dark mb-4">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
-          <svg
-            class="bi me-2"
-            width="40"
-            height="32"
-            role="img"
-            aria-label="Bootstrap"
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
           >
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <ul
-          class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-        >
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li class="nav-item dropdown">
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle text-white"
+                id="dropdown-1"
+                aria-haspopup="true"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Manage</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="dropdown-1">
+                <li><a href="" class="dropdown-item">Category</a></li>
+                <li><a href="" class="dropdown-item">Product</a></li>
+                <li><a href="" class="dropdown-item">Order</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+          <ul class="navbar-nav me-2">
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><i class="fas fa-shopping-cart"></i>Cart(0)</a
+              >
+            </li>
+          </ul>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">
+              Login
+            </button>
+            <button type="button" class="btn btn-warning me-2">Sign-up</button>
+          </div>
+          <span class="nav-item dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle text-white"
+              class="nav-link dropdown-toggle"
               id="dropdown-1"
               aria-haspopup="true"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-              >Manage</a
+              >User</a
             >
             <ul class="dropdown-menu" aria-labelledby="dropdown-1">
-              <li><a href="" class="dropdown-item">Category</a></li>
-              <li><a href="" class="dropdown-item">Product</a></li>
-              <li><a href="" class="dropdown-item">Order</a></li>
+              <li><a href="" class="dropdown-item">Profile</a></li>
+              <li><a href="" class="dropdown-item">Setting</a></li>
+              <li><a href="" class="dropdown-item">Logout</a></li>
             </ul>
-          </li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-        </ul>
-        <ul class="navbar-nav me-2">
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><i class="fas fa-shopping-cart"></i>Cart(0)</a
-            >
-          </li>
-        </ul>
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">
-            Login
-          </button>
-          <button type="button" class="btn btn-warning me-2">Sign-up</button>
+          </span>
         </div>
-        <span class="nav-item dropdown">
-          <a
-            href="#"
-            class="nav-link dropdown-toggle"
-            id="dropdown-1"
-            aria-haspopup="true"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            >User</a
-          >
-          <ul class="dropdown-menu" aria-labelledby="dropdown-1">
-            <li><a href="" class="dropdown-item">Profile</a></li>
-            <li><a href="" class="dropdown-item">Setting</a></li>
-            <li><a href="" class="dropdown-item">Logout</a></li>
-          </ul>
-        </span>
       </div>
-    </div>
-  </header>
-
-  <body>
-    <h1>Homepage</h1>
+    </header>
+    <!-- navbar end -->
+    <!-- main -->
+    <main class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="card"></div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3">
+                <div class="card-header">Pencarian</div>
+                <div class="card-body">
+                  <form action="">
+                    <div class="input-group">
+                      <input type="text" class="form-control" />
+                      <button class="btn btn-primary">Cari</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card mb-3">
+                <div class="card-header">Featured</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end main -->
 
     <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
